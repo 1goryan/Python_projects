@@ -25,4 +25,4 @@ num2 = "some word"
 #res = num1 + num2
 str1 = str(num1)        #приведение к типу строчная переменная
 res = str1 + num2
-print(res)
+print(res)"# Practice_rep" 
