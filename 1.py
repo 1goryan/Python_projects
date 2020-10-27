@@ -25,4 +25,4 @@ print(d)"""
 
                         #списки
 players = [17, 5, 3, 21, 12]
-players[3]
+players[3]"# Practice_rep" 
