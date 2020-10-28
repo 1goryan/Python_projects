@@ -14,7 +14,7 @@ else :
     print("name doesn't contain II") """
 
 
-"""print("What is your name?") #программа чата с операторами
+print("What is your name?") #программа чата с операторами
 name = input()
 print("Hello " + name + "!")
 print("How old are you?")
@@ -22,7 +22,7 @@ old = int(input())
 if old > 18 :
     print("you are an adult")
 elif old == 18 :
-    print("Ok, you are " + old + " years old")
+    print("Ok, you are " + str(old) + " years old")
 else :
     print("you are still a child")
 print("What's you hobby?")
@@ -37,9 +37,9 @@ elif sleep < 8 :
 elif sleep <= 10 :
     print("you sleep very well")
 else :
-    print("you sleep too long")"""
+    print("you sleep too long")
 
-num1 = float(input()) #простейший калькулятор
+"""num1 = float(input()) #простейший калькулятор
 num2 = float(input())
 operation = input()
 if operation == "/" :
@@ -52,4 +52,4 @@ elif operation == "-" :
     summ = num1 - num2
 else :
     print("please choose correct operation")
-print(summ)
+print(summ)"""
