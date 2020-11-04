@@ -42,51 +42,48 @@ fr.close   """
 
 
 dialogue = "What is your name?\n" #программа-диалог с записью в файл
-print("What is your name?") 
+print(dialogue) 
 name = input() + "\n"
 dialogue1 = ("Hello, " + name +  "How old are you?\n")
-print("How old are you?")
+print(dialogue1)
 old = int(input())
 dialogue_old = str(old) + "\n"
 if old > 18 :
     dialogue2 = ("you are an adult\n")
-    print("you are an adult")
+    print(dialogue2)
 elif old == 18 :
     dialogue2 = ("Ok, you are " + str(old) + " years old\n")
-    print("Ok, you are " + str(old) + " years old")
+    print(dialogue2)
 else :
     dialogue2 = ("Ok, you are " + str(old) + " years old\n")
-    print("you are still a child")
+    print(dialogue2)
 dialogue3 = ("What's you hobby?\n")
-print("What's you hobby?")
+print(dialogue3)
 hobby = input() + "\n"
 print(hobby + " is such an intresting hobby!")
 dialogue4 = ("You hobby is "+ hobby + "how many hours do you sleep?" + "\n" )
-print("how many hours do you sleep?")
+print(dialogue4)
 sleep = int(input())
 dialogue_sleep = str(sleep) + "\n"
 if sleep < 5 :
     dialogue5 = ("you sleep so little\n")
-    print("you sleep so little")
+    print(dialogue5)
 elif sleep < 8 :
     dialogue5 = ("you sleep not enought\n")
-    print("you sleep not enought")
+    print(dialogue5)
 elif sleep <= 10 :
     dialogue5 = ("you sleep very well\n")
-    print("you sleep very well")
+    print(dialogue5)
 else :
     dialogue5 = ("you sleep too long\n")
-    print("you sleep too long")
+    print(dialogue5)
 
 f = open('E:\Pyth0n\python\modules\dialogue.txt', 'w')
-f.write(dialogue)
-f.write(name)
-f.write(dialogue1)
-f.write(dialogue_old)
-f.write(dialogue2)
-f.write(dialogue3)
-f.write(hobby)
-f.write(dialogue4)
-f.write(dialogue_sleep)
-f.write(dialogue5)
+
+functions = [dialogue, name, dialogue1, dialogue_old, dialogue2, dialogue3, hobby, dialogue4, dialogue_sleep, dialogue5]
+for i in functions:
+    f.write(i)
 f.close
+
+
+
